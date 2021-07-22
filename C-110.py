@@ -31,5 +31,5 @@ sample_sd= statistics.stdev(mean_list)
 print("s mean and sd",sample_mean,sample_sd)
 
 fig = ff.create_distplot([mean_list], ["claps"], show_hist=False)
-fig.add_trace(go.Scatter(x=[sample_mean, sample_mean], y=[0, 12], mode="lines", name="MEAN"))
+fig.add_trace(go.Scatter(x=[sample_mean, sample_mean], y=[0, 0.01], mode="lines", name="MEAN"))
 fig.show()
